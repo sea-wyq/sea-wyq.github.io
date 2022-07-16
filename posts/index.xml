@@ -4,6 +4,11 @@
 &lt;li>集群守护进程，如Kured、node-problem-detector&lt;/li>
 &lt;li>日志收集守护进程，如fluentd、logstash&lt;/li>
 &lt;li>监控守护进程，如promethues node-exporter&lt;/li>
+&lt;/ul></description></item><item><title>k8s-Service基础组件解析</title><link>https://sea-wyq.github.io/2022/07/k8s-service%E5%9F%BA%E7%A1%80%E7%BB%84%E4%BB%B6%E8%A7%A3%E6%9E%90/</link><pubDate>Sat, 16 Jul 2022 00:00:00 +0000</pubDate><guid>https://sea-wyq.github.io/2022/07/k8s-service%E5%9F%BA%E7%A1%80%E7%BB%84%E4%BB%B6%E8%A7%A3%E6%9E%90/</guid><description>&lt;p>Kubernetes 中Service有以下3种类型：&lt;/p>
+&lt;ul>
+&lt;li>ClusterIP：默认类型，自动分配一个仅Cluster内部可以访问的虚拟IP&lt;/li>
+&lt;li>NodePort：通过每个 Node 上的 IP 和静态端口（NodePort）暴露服务。以ClusterIP为基础，NodePort 服务会路由到 ClusterIP 服务。通过请求 &lt;!-- raw HTML omitted -->:&lt;!-- raw HTML omitted -->, 可以从集群的外部访问一个集群内部的 NodePort 服务。&lt;/li>
+&lt;li>LoadBalancer：使用云提供商的负载均衡器，可以向外部暴露服务。外部的负载均衡器可以路由到 NodePort 服务和 ClusterIP 服务。&lt;/li>
 &lt;/ul></description></item><item><title>k8s-StatefulSet基础组件解析</title><link>https://sea-wyq.github.io/2022/07/k8s-statefulset%E5%9F%BA%E7%A1%80%E7%BB%84%E4%BB%B6%E8%A7%A3%E6%9E%90/</link><pubDate>Sat, 16 Jul 2022 00:00:00 +0000</pubDate><guid>https://sea-wyq.github.io/2022/07/k8s-statefulset%E5%9F%BA%E7%A1%80%E7%BB%84%E4%BB%B6%E8%A7%A3%E6%9E%90/</guid><description>&lt;p>应用场景&lt;/p>
 &lt;ul>
 &lt;li>稳定的不共享持久化存储：即每个pod的存储资源是不共享的，且pod重新调度后还是能访问到相同的持久化数据，基于pvc实现。&lt;/li>
