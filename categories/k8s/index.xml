@@ -4,6 +4,9 @@
 &lt;li>集群守护进程，如Kured、node-problem-detector&lt;/li>
 &lt;li>日志收集守护进程，如fluentd、logstash&lt;/li>
 &lt;li>监控守护进程，如promethues node-exporter&lt;/li>
+&lt;/ul></description></item><item><title>k8s-Secret&amp;ConfigMap基础组件解析</title><link>https://sea-wyq.github.io/2022/07/k8s-secretconfigmap%E5%9F%BA%E7%A1%80%E7%BB%84%E4%BB%B6%E8%A7%A3%E6%9E%90/</link><pubDate>Sat, 16 Jul 2022 00:00:00 +0000</pubDate><guid>https://sea-wyq.github.io/2022/07/k8s-secretconfigmap%E5%9F%BA%E7%A1%80%E7%BB%84%E4%BB%B6%E8%A7%A3%E6%9E%90/</guid><description>&lt;ul>
+&lt;li>ConfigMap是一个K8s存储资源，用于存储应用程序配置文件。&lt;/li>
+&lt;li>Secret主要存储敏感数据。&lt;/li>
 &lt;/ul></description></item><item><title>k8s-Service基础组件解析</title><link>https://sea-wyq.github.io/2022/07/k8s-service%E5%9F%BA%E7%A1%80%E7%BB%84%E4%BB%B6%E8%A7%A3%E6%9E%90/</link><pubDate>Sat, 16 Jul 2022 00:00:00 +0000</pubDate><guid>https://sea-wyq.github.io/2022/07/k8s-service%E5%9F%BA%E7%A1%80%E7%BB%84%E4%BB%B6%E8%A7%A3%E6%9E%90/</guid><description>&lt;p>Kubernetes 中Service有以下3种类型：&lt;/p>
 &lt;ul>
 &lt;li>ClusterIP：默认类型，自动分配一个仅Cluster内部可以访问的虚拟IP&lt;/li>
